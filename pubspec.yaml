@@ -1,0 +1,49 @@
+name: vlm_crosshair
+description: "Kho Tâm Ngắm Valorant Mobile - Ứng dụng chia sẻ và cập nhật tâm ngắm Valorant."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  intl: any
+  cupertino_icons: ^1.0.8
+  supabase_flutter: ^2.16.0
+  shared_preferences: ^2.3.5
+  image_picker: ^1.1.2
+  image_cropper: ^8.0.0
+  crypto: ^3.0.3
+  
+  # Các gói bổ sung cho tính năng tự động kiểm tra cập nhật
+  http: ^1.2.0
+  package_info_plus: ^8.0.0
+  url_launcher: ^6.2.5
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  flutter_gen_runner: ^5.3.0
+  build_runner: ^2.4.0
+  flutter_launcher_icons: ^0.13.1
+
+flutter:
+  uses-material-design: true
+  generate: true   # <--- Đã thêm dòng này ở đây
+
+  # Khai báo đường dẫn asset để ứng dụng không bị mất ảnh (QR Code, Logo, ...)
+  assets:
+    - assets/images/
+
+flutter_launcher_icons:
+  image_path: "assets/images/LogoV.png"
+  android: true
+  ios: true
+  image_path_android: "assets/images/LogoV.png"
+  image_path_ios: "assets/images/LogoV.png"

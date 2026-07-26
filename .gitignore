@@ -1,0 +1,54 @@
+# Flutter
+build/
+.dart_tool/
+.pub/
+.pub-cache/
+*.iml
+*.lock
+*.log
+*.pid
+*.swp
+.DS_Store
+node_modules/
+
+# Android
+*.apk
+*.aab
+*.keystore
+*.jks
+gradle.properties
+local.properties
+*.iml
+*.hprof
+android/app/src/main/debug/
+android/app/src/main/profile/
+
+# iOS
+*.ipa
+*.app
+Pods/
+*.xcworkspace
+*.xcuserstate
+*.xcconfig
+*.generated.dart
+
+# Debug symbols
+debug_symbols/
+D:/debug_symbols/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Environment
+.env
+*.env
+.env.*
+
+# Generated files
+lib/l10n/app_localizations.dart
+lib/l10n/app_localizations_en.dart
+lib/l10n/app_localizations_vi.dart
