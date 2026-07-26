@@ -44,8 +44,8 @@ class AppVersion {
 
   factory AppVersion.fromJson(Map<String, dynamic> json) {
     return AppVersion(
-      version: json['version'] ?? '1.0.0',
-      buildNumber: json['buildNumber'] ?? '1',
+      version: json['version'] ?? '1.0.1',
+      buildNumber: json['buildNumber'] ?? '2',
       releaseNotes: json['releaseNotes'] ?? '',
       downloadUrl: json['downloadUrl'] ?? '',
     );
